@@ -366,17 +366,41 @@ $(function () {
 		interval: 5000
 	});
 /* Read More pop up */
-document.getElementById("readMoreButton").addEventListener("click", function() {
-	// Toggle the 'remove1' and 'details1' classes on the respective elements
-	const remove1Element = document.querySelector(".remove1");
-	const details1Element = document.querySelector(".details1");
-
-	remove1Element.classList.toggle("remove1");
-	remove1Element.classList.toggle("details1");
-
-	details1Element.classList.toggle("remove1");
-	details1Element.classList.toggle("details1");
+$(document).ready(function() {
+    $(".first").click(function() {
+        $(".remove1").addClass("hide").toggle(500);
+        $(".details1").removeClass("hide").toggle(500);
+    });
+    $(".second").click(function() {
+        $(".remove2").addClass("hide").toggle(500);
+        $(".details2").removeClass("hide").toggle(500);
+    });
+    $(".third").click(function() {
+        $(".remove3").addClass("hide").toggle(500);
+        $(".details3").removeClass("hide").toggle(500);
+    });
+    $(".forth").click(function() {
+        $(".remove4").addClass("hide").toggle(500);
+        $(".details4").removeClass("hide").toggle(500);
+    });
+    $(".fifth").click(function() {
+        $(".remove5").addClass("hide").toggle(500);
+        $(".details5").removeClass("hide").toggle(500);
+    });
 });
 
+
+  
+ // Hide Scroll on Top page
+ $(document).ready(function() {
+	// Show/hide the back-to-top button on scroll
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('.back-to-top').css('visibility', 'visible');
+		} else {
+			$('.back-to-top').css('visibility', 'hidden');
+		}
+	});
+});
 
 });
