@@ -263,7 +263,7 @@
                                 </ul>
                                 </div>
                               </div>
-                              <button class="buynow fifth  mt-3" data-target="section5">Read More</button>
+                              <button class="buynow fifth  mt-3 mb-2" data-target="section5">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -716,11 +716,14 @@
                     var target = button.getAttribute("data-target");
                     var details = document.getElementById(target);
                     var remove = details.previousElementSibling; 
+
+                    setTimeout(function (){
                     details.classList.toggle("hidden");
                     remove.classList.toggle("hidden");
-                });
+                }, 100);
             });
         });
+    });
     </script>
    
     <!-- google map js -->
