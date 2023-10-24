@@ -366,28 +366,30 @@ $(function () {
 		interval: 5000
 	});
 /* Read More pop up */
-$(document).ready(function() {
-    $(".first").click(function() {
-        $(".remove1").addClass("hide").toggle(500);
-        $(".details1").removeClass("hide").toggle(500);
-    });
-    $(".second").click(function() {
-        $(".remove2").addClass("hide").toggle(500);
-        $(".details2").removeClass("hide").toggle(500);
-    });
-    $(".third").click(function() {
-        $(".remove3").addClass("hide").toggle(500);
-        $(".details3").removeClass("hide").toggle(500);
-    });
-    $(".forth").click(function() {
-        $(".remove4").addClass("hide").toggle(500);
-        $(".details4").removeClass("hide").toggle(500);
-    });
-    $(".fifth").click(function() {
-        $(".remove5").addClass("hide").toggle(500);
-        $(".details5").removeClass("hide").toggle(500);
-    });
-});
+
+// document.addEventListener("DOMContentLoaded", function () {
+    
+//     var readMoreButton = document.querySelector(".buynow.first");
+//     var details1 = document.querySelector(".details1");
+//     var remove1 = document.querySelector(".remove1");
+
+    
+//     readMoreButton.addEventListener("click", function () {
+        
+//         details1.classList.toggle("hidden");
+//         remove1.classList.toggle("hidden");
+//     });
+
+    
+//     details1.classList.add("hidden");
+
+// 	console.log("Button:", readMoreButton);
+// 	console.log("Details1:", details1);
+// 	console.log("Remove1:", remove1);
+
+// });
+
+
 
 
   

@@ -688,9 +688,9 @@ ul.top_icon li a {
      color: #ffffff;
 }
 
-.carousel-caption .hide {
-     display: none;
-   }
+.hidden {
+     display: none; 
+ }
 
 .right-dropdown-currency .dropdown-link {
      min-width: 100px;
