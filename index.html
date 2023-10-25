@@ -14,15 +14,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="assets/images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -38,7 +38,7 @@
 <body class="main-layout ">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+        <div class="loader"><img src="assets/images/loading.gif" alt="#" /></div>
     </div>
     <!-- end loader -->
     <!-- header -->
@@ -52,7 +52,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo mb-5">
-                                    <a href="index.html"><img src="images/1678768042168-removebg-preview.png" alt="#"></a>
+                                    <a href="index.html"><img src="assets/images/1678768042168-removebg-preview.png" alt="#"></a>
                                 </div>
                             </div>
                         </div>
@@ -67,12 +67,12 @@
                                     <div class="limit-box">
                                         <nav class="main-menu text-center">
                                             <ul class="menu-area-main">
-                                                <li class="active"> <a href="index.html">Home</a> </li>
+                                                <li class="active"><a href="index.html">Home</a></li>
                                                 <li> <a href="#about">About</a> </li>
                                                 <li><a href="#soln-overview">Solutions</a></li>
+                                                <li> <a href="#partners">Partners</a> </li>
                                                 <li><a href="#funding">Fundings</a></li>
                                                 <li><a href="#growth_strategy">Growth Strategy</a></li>
-                                                <li><a href="#partner">Partners</a></li>
                                                 <li><a href="#contact">Contact Us</a></li>
 
                                             </ul>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
                     <div class="about_img">
-                        <figure><img src="images/about.png" alt="img" /></figure>
+                        <figure><img src="assets/images/about.png" alt="img" /></figure>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
             </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="first-slide" src="images/banner.jpg" alt="First slide">
+                    <img class="first-slide" src="assets/images/banner.jpg" alt="First slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <h1>Agri-Tech</h1>
@@ -149,9 +149,9 @@
                                 and resource optimization. We provide farmers with real-time insights to make informed decisions that increase productivity while minimizing
                                 resource waste. </p>
                             </div>
-                            <button class="buynow first mb-3" >Read More</button>
+                           
 
-                            <div class="details1">
+                            <div class="details1 hidden" id="section1">
                                 <div class="hide">
                                 <ul>
                                     <li><strong>Precision Farming: </strong>Leveraging data analytics, IoT devices, and remote sensing to optimize crop management, resource allocation, and yield prediction.</li>
@@ -161,12 +161,12 @@
                                 </ul>
                                 </div>
                               </div>
-
+                              <button class="buynow first mt-3" data-target="section1">Read More</button>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <img class="second-slide" src="images/banner.jpg" alt="Second slide">
+                <div class="carousel-item">
+                    <img class="second-slide" src="assets/images/banner.jpg" alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <h1>Food Chain Management</h1>
@@ -174,9 +174,9 @@
                             <div class="remove2">
                             <p>We oversee the entire food chain to ensure food security and healthy food production. From seed quality and crop growth to harvest, storage, distribution, and consumption, our comprehensive approach helps maintain the nutritional value of produce while minimizing food waste.</p>
                             </div>
-                            <button class="buynow second" >Read More</button>
+                            
 
-                            <div class="details2">
+                            <div class="details2 hidden" id="section2">
                                 <div class="hide">
                                 <ul>
                                     <li><strong>Supply Chain Optimization: </strong>Implementing technologies to streamline the movement of agricultural products from farm to consumer, reducing waste and enhancing efficiency.</li>
@@ -186,23 +186,23 @@
                                 </ul>
                                 </div>
                               </div>
-
+                              <button class="buynow second mt-3" data-target="section2">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <img class="third-slide" src="images/banner.jpg" alt="Third slide">
+                    <img class="third-slide" src="assets/images/banner.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <h1>Aggregation Centers</h1>
                             <span>HEALTH SOLUTIONS</span>
                             <div class="remove3">
-                            <p>Agroworld Healthe Solutions Ltd builds aggregation facilities designed to streamline the post-harvest processes of agricultural products.The main objective of farm produce aggregation centers is to enhance efficiency in the
+                            <p>Agroworld Health Solutions Ltd builds aggregation facilities designed to streamline the post-harvest processes of agricultural products.The main objective of farm produce aggregation centers is to enhance efficiency in the
                                 agricultural supply chain by reducing post-harvest losses, improving product quality, and providing farmers with access to better markets and creating food security for the country.
                             </p>
                         </div>
-                            <button class="buynow third mb-5" >Read More</button>
-                            <div class="details3">
+                           
+                            <div class="details3 hidden" id="section3">
                                 <div class="hide">
                                 <ul>
                                     <li><strong>Sorting and Grading:  </strong>Produce is sorted based on quality, size, and other relevant criteria, ensuring consistency and market appeal.</li>
@@ -213,22 +213,22 @@
                                 </ul>
                                 </div>
                               </div>
-
+                              <button class="buynow third mt-5" data-target="section3">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <img class="forth-slide" src="images/banner.jpg" alt="Forth slide">
+                    <img class="forth-slide" src="assets/images/banner.jpg" alt="Forth slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <h1>Climate Change</h1>
                             <span>HEALTH SOLUTIONS</span>
                             <div class="remove4">
-                            <p>Agroworld Health Solutions Ltd actively addresses climate change challenges by implementing practises that reduce carbon footprint, promote soil health, and mitigate the impact of extreme weather events. Our solutions include crop diversification, agroforestry, and sustainanble land management.</p>
+                            <p>Agroworld Health Solutions Ltd actively addresses climate change challenges by implementing practises that reduce carbon footprint, promote soil health, and mitigate the impact of extreme weather events. Our solutions include crop diversification, agroforestry, and sustainable land management.</p>
                             </div>
-                            <button class="buynow forth mb-5" >Read More</button>
+                            
 
-                            <div class="details4">
+                            <div class="details4 hidden" id="section4">
                                 <div class="hide">
                                 <ul>
                                     <li><strong>Sustainable Practices:  </strong>Educating farmers on climate-smart agricultural techniques,diversification, and soil health management.</li>
@@ -239,12 +239,12 @@
                                 </ul>
                                 </div>
                               </div>
-
+                              <button class="buynow forth mt-5" data-target="section4">Read More</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <img class="fifth-slide" src="images/banner.jpg" alt="Fifth slide">
+                    <img class="fifth-slide" src="assets/images/banner.jpg" alt="Fifth slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                             <h1>Capacity Building</h1>
@@ -252,9 +252,9 @@
                             <div class="remove5">
                             <p>We believe in the power of knowledge dissemination. Through workshops, seminars, and digital platforms, we educate farmers, stakeholders, and communities about sustainable agricultural practices, climate changes adaptation, and the importance of good farming practises. </p>
                             </div>
-                            <button class="buynow fifth" >Read More</button>
+                            
 
-                            <div class="details5">
+                            <div class="details5 hidden" id="section5">
                                 <div class="hide">
                                 <ul>
                                     <li><strong>Training Programs:   </strong>Conducting workshops,seminars, and training sessions to equip farmers with knowledge about Agri-tech solutions and climate resilience. </li>
@@ -263,7 +263,7 @@
                                 </ul>
                                 </div>
                               </div>
-
+                              <button class="buynow fifth  mt-3 mb-2" data-target="section5">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -290,7 +290,7 @@
         </div>
         <div class="row">
             <div class="col-md-5 col-6">
-            <img width="100%" height="500px" class="rounded-5 m-2" src="images\partners\growthStrafsfebve.jpg" alt="Mission-Vision">
+            <img width="100%" height="500px" class="rounded-5 m-2" src="assets\images\partners\growthStrafsfebve.jpg" alt="Mission-Vision">
             </div>
             
             <div class="col-md-7 col-6 text-white">
@@ -321,7 +321,7 @@
 
     <!-- end product -->
     <!-- clients -->
-    <div id="partner" class="clients">
+    <div id="partners" class="clients">
         <div class="container">
             <div class="row mt-4">
                 <div class="col-md-12">
@@ -331,259 +331,228 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col p-1 m-2 d-flex align-items-stretch">
-            <section class="smart_irrigations mb-3">
-                <div class="section-header text-center wow fadeIn" data-wow-delay="0.1s">
-                    <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">SMART IRRIGATION</h3>
+                <div class="col-md-2 col-5 p-1 m-2 " style="border: 2px solid #286b01; border-radius: 10px;">
+            <section class="smart-irrigation mb-3">
+                <div class="section-header text-center pb-2 wow fadeIn" data-wow-delay="0.1s">
+                    <h4 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">SMART IRRIGATION</h4>
                 </div>
-                <div class="col-sm-7 wow fadeInUp  d-flex align-items-center" data-wow-delay="0.1s">
-                  <img class="img-fluid pop-out" width="100%" src="images\partners\iebfarm(x)nin.jpg" alt="farmX">
-              </div>
+                
+               
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images/partners/iebfarm(x)nin.jpg" alt="farmX">
+                </div>
+              
                       
-                      <div class="col-sm-7 wow fadeInUp d-flex align-items-center" data-wow-delay="0.1s">               
-                  <img class="img-fluid pop-out" width="100%" src="images\partners\cefcrop(x)wef.png" alt="cropX">
-              </div>
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\cefcrop(x)wef.png" alt="cropX">
+                </div>
+              
                      
-                      <div class="col-sm-7 wow fadeInUp  d-flex align-items-center" data-wow-delay="0.1s">
-                  <img class="img-fluid pop-out" width="100%" src="images\partners\feehortauvf.jpeg" alt="Lenovo">
-              </div>
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\feehortauvf.jpeg" alt="hortau">
+                </div>
+              
                     
-                      <div class="col-sm-7 wow fadeInUp  d-flex align-items-center" data-wow-delay="0.1s">
-                  <img class="img-fluid pop-out" width="100%" src="images\partners\unnamedkilimo.png" alt="ManageEngine">
-              </div> 
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\unnamedkilimo.png" alt="kilimo">
+                </div>
+              
                   
                 </section>
-            </div>
-            <div class="col p-1 m-2 d-flex align-items-stretch">
-                <section class="crop_management mb-3">
-                    
-                        <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">CROP MANAGEMENT</h3>
-                    <div class="col-sm-7 wow fadeInUp  p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                    <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                      <img class="img-fluid pop-out" width="100%" src="images\partners\agrivilogoyvjbjbj.png" alt="farmX">
-                    </div>
-                  </div>
-                          
-                          <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                    <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                      <img class="img-fluid pop-out" width="100%" src="images\partners\rvfcdfarmLogs.png" alt="cropX">
-                    </div>
-                  </div>
-                         
-                          <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                    <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                      <img class="img-fluid pop-out" width="100%" src="images\partners\arablelanvysrfw.jpg" alt="Lenovo">
-                    </div>
-                  </div>
-                        
-                          <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                    <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                      <img class="img-fluid pop-out" width="100%" src="images\partners\dowcroptrAk.png" alt="ManageEngine">
-                    </div>
-                  </div> 
-
-                  <div class="col-sm-5 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                    <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                      <img class="img-fluid pop-out" width="100%" src="images\partners\they4fz2sompwxfy69yf.jpg" alt="ManageEngine">
-                    </div>
-                  </div> 
-                      
-                    </section>
                 </div>
-                <div class="col p-1 m-2 d-flex align-items-stretch">
-                    <section class="crop_protection mb-3">
-                        
-                            <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">CROP PROTECTION</h3>
-                        <div class="col-sm-7 wow fadeInUp  p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                        <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                          <img class="img-fluid pop-out" width="100%" src="images\partners\Semlogoios.png" alt="farmX">
-                        </div>
-                      </div>
-                              
-                              <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                        <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                          <img class="img-fluid pop-out" width="100%" src="images\partners\logo_original_trapview.png" alt="cropX">
-                        </div>
-                      </div>
-                             
-                              <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                        <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                          <img class="img-fluid pop-out" width="100%" src="images\partners\40827801d2ac-Sencrop___logo_carr_.jpg" alt="Lenovo">
-                        </div>
-                      </div>
-                            
-                              <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                        <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                          <img class="img-fluid pop-out" width="100%" src="images\partners\Enkotxgcvbk.jpg" alt="ManageEngine">
-                        </div>
-                      </div> 
-                          
-                      <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                        <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                          <img class="img-fluid pop-out" width="100%" src="images\partners\agbiomeevcdsgbt.png" alt="ManageEngine">
-                        </div>
-                      </div> 
-                        </section>
-                    </div>
-                    <div class="col p-1 m-2 d-flex align-items-stretch">
-                        <section class="genetics_optimization mb-1">
-                             
-                                <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">GENETIC/BREEDING OPTIMIZATION</h3>
-                            <div class="col-sm-7 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class=" text-center d-flex align-items-center justify-content-center">
-                              <img class="img-fluid pop-out" width="100%" src="images\partners\r1skwtekkagBoostbugi6kmii.jpg" alt="farmX">
-                            </div>
-                          </div>
-                                  
-                                  <div class="col-sm-7 wow fadeInUp d-flex align-items-stretch" data-wow-delay="0.1s">
-                            <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                              <img class="img-fluid pop-out" width="100%" src="images\partners\r3geveConnecterra.jpg" alt="cropX">
-                            </div>
-                          </div>
-                                 
-                                  <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                            <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                              <img class="img-fluid pop-out" width="100%" src="images\partners\vltdsjci1farmNote6oh3tq.jpg" alt="Lenovo">
-                            </div>
-                          </div>
-                                
-                                  <div class="col-sm-4 wow fadeInUp ml-4 d-flex justify-content-center" data-wow-delay="0.1s">
-                            <div class="h-100 text-center d-flex align-items-center ">
-                              <img class="img-fluid pop-out" width="100%" src="images\partners\downQAG.jpeg" alt="ManageEngine">
-                            </div>
-                          </div> 
-                              
-                          <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                            <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                              <img class="img-fluid pop-out" width="100%" src="images\partners\q08xagn-hi-fidelity-11x0ykqxb.jpg" alt="ManageEngine">
-                            </div>
-                          </div> 
+            
+                <div class="col-md-2 col-5 p-1 m-2" style="border: 2px solid #286b01; border-radius: 10px;">
+                <section class="crop-management mb-3">
+                <div class="section-header text-center pb-4 wow fadeIn" data-wow-delay="0.1s">
+                    <h4 class="bg-white fw-semi-bold text-uppercase text-primary">CROP MANAGEMENT</h4>
+                </div>
+               
+                
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\agrivilogoyvjbjbj.png" alt="agrivi">
+                </div>
+              
+                     
+                    
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="80%" src="assets/images\partners\rvfcdfarmLogs.png" alt="farmlogs">
+                </div>
+              
+                     
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\arablelanvysrfw.jpg" alt="arable">
+                </div>
+              
+                      
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center mt-3">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\dowcroptrAk.png" alt="croptrak">
+                </div>
+              
+                      
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center mt-4">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\they4fz2sompwxfy69yf.jpg" alt="theYield">
+                </div>
+              
+                </section>
+                </div>
 
-                            </section>
-                        </div>
-                        <div class="col p-1 m-2 d-flex align-items-stretch">
-                            <section class="aerial_image mb-3">
-                                
-                                    <h3 class="bg-white px-2 fw-semi-bold text-uppercase text-primary">AERIAL IMAGE ANALYTICS</h3>
-                                <div class="col-sm-7 wow fadeInUp  p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                                <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                                  <img class="img-fluid pop-out" width="100%" src="images\partners\rezatecearthData.png" alt="farmX">
-                                </div>
-                              </div>
-                                      
-                                      <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                                <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                                  <img class="img-fluid pop-out" width="100%" src="images\partners\d78ac7a4-1slantRange-9a2c-3f15836fc6a4.png" alt="cropX">
-                                </div>
-                              </div>
-                                     
-                                      <div class="col-sm-9 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                                <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                                  <img class="img-fluid pop-out" width="100%" src="images\partners\Orbital_Insight_vrecw.jpg" alt="Lenovo">
-                                </div>
-                              </div>
-                                    
-                                      <div class="col-sm-7 wow fadeInUp p-1 m-2 d-flex align-items-stretch" data-wow-delay="0.1s">
-                                <div class="h-100 text-center d-flex align-items-center justify-content-center">
-                                  <img class="img-fluid pop-out" width="100%" src="images\partners\gamayafdfghvjbjb.png" alt="ManageEngine">
-                                </div>
-                              </div> 
-                                  
-                                </section>
-                            </div>
+                <div class="col-md-2 col-5 p-1 m-2" style="border: 2px solid #286b01; border-radius: 10px;">
+                <section class="crop-protection mb-3">
+                <div class="section-header text-center pb-2 wow fadeIn" data-wow-delay="0.1s">
+                    <h4 class="bg-white fw-semi-bold text-uppercase text-primary">CROP PROTECTION</h4>
+                </div>
+                
+                
+                <div class="h-100 text-center d-flex align-items-center justify-content-center mt-4 mb-5">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\Semlogoios.png" alt="semios">
+                </div>
+              
+                      
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\logo_original_trapview.png" alt="trapView">
+                </div>
+              
+                     
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\40827801d2ac-Sencrop___logo_carr_.jpg" alt="sencrop">
+                </div>
+              
+                     
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\Enkotxgcvbk.jpg" alt="enko">
+                </div>
+              
+                     
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\agbiomeevcdsgbt.png" alt="agbiome">
+                </div>
+             
+                 
+                </section>
+                </div>
+                
+                <div class="col-md-2 col-5 p-1 m-2" style="border: 2px solid #286b01; border-radius: 10px;">
+                 <section class="breeding-opti mb-2">
+                 <div class="section-header text-center wow fadeIn pb-2" data-wow-delay="0.1s">
+                    <h4 class="bg-white fw-semi-bold text-uppercase text-primary">GENETIC OPTIMIZATION</h4>
+                </div>
+                
+                
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\r1skwtekkagBoostbugi6kmii.jpg" alt="agboost">
+                </div>
+              
+                      
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\r3geveConnecterra.jpg" alt="connecterra">
+                </div>
+              
+                     
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="70%" src="assets/images\partners\vltdsjci1farmNote6oh3tq.jpg" alt="farmnote">
+                </div>
+              
+                      
+                      
+                <div class="h-100 text-center d-flex align-items-center justify-content-center">
+                  <img class="img-fluid pop-out" width="40%" src="assets/images\partners\downQAG.jpeg" alt="qag">
+                </div>
+              
+                      
+                     
+                <div class="h-100 text-center d-flex align-items-center justify-content-center mt-4">
+                  <img class="img-fluid pop-out" width="50%" src="assets/images\partners\q08xagn-hi-fidelity-11x0ykqxb.jpg" alt="hfg">
+                </div>
+              
+                  
+                </section> 
+                </div>
+
+                <div class="col-lg-2 col-5 p-1 m-2" style="border: 2px solid #286b01; border-radius: 10px;">
+                <section class="aerial-image mb-3">
+                    <div class="section-header text-center pb-2 wow fadeIn" data-wow-delay="0.1s">
+                        <h4 class="bg-white fw-semi-bold text-uppercase text-primary">AERIAL-IMAGE ANALYTICS</h4>
+                    </div>
+                    
+                    
+                    <div class="h-100 text-center d-flex align-items-center justify-content-center m-3">
+                      <img class="img-fluid pop-out" width="90%" src="assets/images\partners\rezatecearthData.png" alt="rezatec">
+                    </div>
+                  
+                          
+                         
+                    <div class="h-100 text-center d-flex align-items-center justify-content-center m-3">
+                      <img class="img-fluid pop-out" width="90%" src="assets/images\partners\d78ac7a4-1slantRange-9a2c-3f15836fc6a4.png" alt="slantRange">
+                    </div>
+                  
+                         
+                          
+                    <div class="h-100 text-center d-flex align-items-center justify-content-center m-3">
+                      <img class="img-fluid pop-out" width="90%" src="assets/images\partners\Orbital_Insight_vrecw.jpg" alt="orbital-insight">
+                    </div>
+                  
+                        
+                          
+                    <div class="h-100 text-center d-flex align-items-center justify-content-center m-3">
+                      <img class="img-fluid pop-out" width="90%" src="assets/images\partners\gamayafdfghvjbjb.png" alt="gamaya">
+                    
+                  </div>
+                    </section> 
+                </div>
             </div>
         </div>
     </div>
-    <div class="clients_red">
+
+    <div class="offer" id="funding">
         <div class="container">
-            <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <!-- <ul class="carousel-indicators">
-                    <li data-target="#testimonial_slider" data-slide-to="0" class=""></li>
-                    <li data-target="#testimonial_slider" data-slide-to="1" class="active"></li>
-                    <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
-                </ul> -->
-                <!-- The slideshow -->
-                <!-- <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <div class="testomonial_section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2><strong class="black"> Funding</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offer-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                        <div class="offer_box">
+                            <h3>Strategic Alliances</h3>
+                            <figure><img src="assets/images/stratwvwergvww.jpeg" alt="img" /></figure>
+                            <p>Agroworld has formed strategic alliances with industry players who provide not only financial support but also access to distribution networks, technology, or markets.</p>
 
-                            <div class="full testimonial_cont text_align_center cross_layout">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
-                                        <div class="testomonial_img">
-                                            <i><img src="images/tes.jpg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
-                                        <div class="cross_inner">
-                                            <h3>Johndue<br><strong class="ornage_color">Farm & CO</strong></h3>
-                                            <p><img src="icon/1.png" alt="#" />ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                <img src="icon/2.png" alt="#" />
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">   <!-- margin_ttt -->
+                        <div class="offer_box">
+                            <h3>Grants</h3>
+                            <figure><img src="assets/images/foiytvgrantsfgbn.jpg" alt="img" /></figure>
+                            <p>Agroworld has applied for grants, awards, and funding opportunities offered by governmental agencies, non-profit organizations, and foundations that support agricultural innovation, climate resilience, and sustainable development.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="offer_box">
+                            <h3>Central/County Governments</h3>
+                            <figure><img src="assets/images/innowrfrfwed.jpg" alt="img" /></figure>
+                            <p>Exploring government sponsored programs, subsidies, and incentives that promote agriculture innovation, technology adoption, and sustainability practices.</p>
                         </div>
                     </div>
 
-                    <div class="carousel-item active">
-
-                        <div class="testomonial_section">
-                            <div class="full center">
-                            </div>
-                            <div class="full testimonial_cont text_align_center cross_layout">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
-                                        <div class="testomonial_img">
-                                            <i><img src="images/tes.jpg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
-                                        <div class="cross_inner">
-                                            <h3>Johndue<br><strong class="ornage_color">Farm & CO</strong></h3>
-                                            <p><img src="icon/1.png" alt="#" />ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                <img src="icon/2.png" alt="#" />
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-
-                        <div class="testomonial_section">
-                            <div class="full center">
-                            </div>
-                            <div class="full testimonial_cont text_align_center cross_layout">
-                                <div class="row">
-                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 pa_right">
-                                        <div class="testomonial_img">
-                                            <i><img src="images/tes.jpg" alt="#"/></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 pa_left">
-                                        <div class="cross_inner">
-                                            <h3>Johndue<br><strong class="ornage_color">Farm & CO</strong></h3>
-                                            <p><img src="icon/1.png" alt="#" />ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                                                <img src="icon/2.png" alt="#" />
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div> -->
-
+                
+                </div>
             </div>
         </div>
     </div>
@@ -652,7 +621,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                         <div class="address">
-                            <a href="index.html"> <img src="images/1678768042168-removebg-preview.png" alt="logo" /></a>
+                            <a href="index.html"> <img src="assets/images/1678768042168-removebg-preview.png" alt="logo" /></a>
                             
                         </div>
                     </div>
@@ -672,46 +641,47 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class=" col-lg-3 col-md-4 col-sm-12">
                         <div class="address">
                             <h3>Contact Us</h3>
 
                             <ul class="loca">
                                 <li>
-                                    <a href="#"><img src="icon/loc.png" alt="#" /></a>4th floor, Parksuites, Parklands rd, 
+                                    <a href="#"><img src="assets/images/icon/loc.png" alt="#" /></a>4th floor, Parksuites, Parklands rd, 
                                     <br>Nairobi, Kenya </li>
                                 <li>
-                                    <a href="#"><img src="icon/email.png" alt="#" /></a>info@agroworldhealth.com </li>
+                                    <a href="#"><img src="assets/images/icon/email.png" alt="#" /></a>info@agroworldhealth.com </li>
                                 <li>
-                                    <a href="#"><img src="icon/call.png" alt="#" /></a>+25478909232 </li>
+                                    <a href="#"><img src="assets/images/icon/call.png" alt="#" /></a>+25478909232 </li>
                             </ul>
                         </div>
                     </div>
+                    <!-- <button class="back-to-top">Top</button> -->
                 </div>
             </div>
         </div>
-       <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-chevron-up" style="font-size: 25px; "></i></a>
+      
         <div class="copyright">
             <div class="container">
-                <p>© 2023 All Rights Reserved. Design By<a href="https://html.design/"> </a></p>
+                <p>© 2023 All Rights Reserved. Design By<a href="#"> </a></p>
            
         </div>
         </div>
+        
     </footr>
 
     <!-- end footer -->
     <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.0.0.min.js"></script>
+    <script src="assets/js/plugin.js"></script>
     <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/custom.js"></script>
     <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -734,6 +704,26 @@
                 $(this).removeClass('transition');
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            var buttons = document.querySelectorAll(".buynow");
+
+            
+            buttons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    
+                    var target = button.getAttribute("data-target");
+                    var details = document.getElementById(target);
+                    var remove = details.previousElementSibling; 
+
+                    setTimeout(function (){
+                    details.classList.toggle("hidden");
+                    remove.classList.toggle("hidden");
+                }, 100);
+            });
+        });
+    });
     </script>
    
     <!-- google map js -->
