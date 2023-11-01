@@ -366,29 +366,30 @@ $(function () {
 		interval: 5000
 	});
 /* Read More pop up */
+// $(document).addEventListener("DOMContentLoaded", function () {
+            
+// 	var buttons = document.querySelectorAll(".buynow");
 
-// document.addEventListener("DOMContentLoaded", function () {
-    
-//     var readMoreButton = document.querySelector(".buynow.first");
-//     var details1 = document.querySelector(".details1");
-//     var remove1 = document.querySelector(".remove1");
+	
+// 	buttons.forEach(function (button) {
+// 		button.addEventListener("click", function () {
+			
+// 			var target = button.getAttribute("data-target");
+// 			var details = document.getElementById(target);
+// 			var remove = details.previousElementSibling; 
 
-    
-//     readMoreButton.addEventListener("click", function () {
-        
-//         details1.classList.toggle("hidden");
-//         remove1.classList.toggle("hidden");
-//     });
-
-    
-//     details1.classList.add("hidden");
-
-// 	console.log("Button:", readMoreButton);
-// 	console.log("Details1:", details1);
-// 	console.log("Remove1:", remove1);
-
+// 			setTimeout(function (){
+// 			details.classList.toggle("hidden");
+// 			remove.classList.toggle("hidden");
+// 		}, 100);
+// 	});
+// });       
 // });
 
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    var menu = document.querySelector('.menu-area-main');
+    menu.classList.toggle('active');
+});
 
 
 
