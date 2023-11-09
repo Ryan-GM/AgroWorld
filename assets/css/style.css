@@ -220,7 +220,7 @@ button {
 }
 
 .full {
-     width: 100%;
+     width: 250px;
      float: left;
      margin: 0;
      padding: 0;
@@ -432,8 +432,8 @@ a.readmore_bt {
 
 .header {
      font-family: poppins;
-     padding: 10px 0px;
-    background: #052501;
+     padding: -10px 0px;
+    background: #073401;
      background-repeat: no-repeat;
 background-size: 100% 100%;
 background-position: center center;
@@ -441,15 +441,16 @@ background-position: center center;
 }
 
 .logo {
-     float: left;
+     
      position: relative;
      padding-top: 1px;
-     height: 70px;
+     height: 80px;
+     
 }
 
 nav.main-menu {
-     float: right;
-     margin-left: 0;
+     float: left;
+     margin-left: 50px;
 }
 
 ul.top_icon {
@@ -1612,16 +1613,17 @@ font-weight: 500;
     position: relative;
     z-index: 999;
     background: #090501;
-    margin-left: 31px;
+    margin-left: 250px;
     top: 0;
     margin-bottom: -43px;
-
+    border-radius: 10px;
+   
      }
 .location_icon_bottum::before {
      position: absolute;
 content: "";
 top: 0px;
-background: url(../icon/wfe4.png);
+background: url(../images/icon/wfe4.png);
 background-repeat: repeat;
 width: 67px;
 height: 67px;
@@ -1635,7 +1637,7 @@ color: #fff;
 font-size: 15px;
 font-weight: 500;
 }
-.location_icon_bottum ul li img {padding-right: 10px;}
+
 
 /** banner **/
 
@@ -2164,7 +2166,10 @@ border-bottom: #3e7f21 solid 4px;
 margin-bottom: 20px;
 width: 226px;
  }
-.address img {padding-bottom: 10px;}
+.address img {
+     padding-bottom: 10px;
+     
+}
 
  .address p {
      color: #fff;
