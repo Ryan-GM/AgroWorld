@@ -11,7 +11,7 @@
 }
 
 /* Media query to show/hide the button and menu on small screens */
- /* @media screen and (max-width: 767px) {
+ @media screen and (max-width: 767px) {
    .menu-toggle {
         display: block; 
     }
@@ -24,7 +24,7 @@
         display: flex;
         flex-direction: column;
     }
-}  */
+} 
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
 
