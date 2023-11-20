@@ -192,10 +192,6 @@ button {
      cursor: pointer;
 }
 
-.full {
-     float: left;
-     width: 100%;
-}
 
 .layout_padding {
      padding-top: 90px;
@@ -1613,9 +1609,9 @@ font-weight: 500;
     position: relative;
     z-index: 999;
     background: #090501;
-    margin-left: 250px;
+    margin-left: 270px;
     top: 0;
-    margin-bottom: -43px;
+    margin-bottom: -50px;
     
    
      }
